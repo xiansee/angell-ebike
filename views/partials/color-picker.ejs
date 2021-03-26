@@ -1,0 +1,12 @@
+<div class="color-picker">
+  <% Object.entries(colorOptions).map(([colorName, colorList]) => { %>
+    <% const id = `${modelId}-${colorName}` %>
+    <div class="color-select-container">
+      <div
+        id=<%=id%>
+        class="color-select"
+        style="background: linear-gradient(0deg, <%= colorList[0] %> 0%, <%= colorList[1] %> 100%)">
+      </div>
+    </div>
+  <% }) %>
+</div>

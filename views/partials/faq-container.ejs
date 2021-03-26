@@ -1,0 +1,21 @@
+<section id="faq-container">
+  <div id="accordion">
+    <h3 class="container-title">Frequently Asked Questions</h3>
+    <% faqList.map((faq) => { %>
+      <% const collapseId = `collapse-${faq.id}`%>
+      <div class="faq-title">
+        <button class="faq-btn" data-toggle="collapse" data-target="#<%=collapseId%>">
+          <%=faq.question%>
+        </button>
+      </div>
+      <div id=<%=collapseId%> class="collapse hide" data-parent="#accordion">
+        <div class="faq-answer"><%=faq.answer%></div>
+      </div>
+    <% }) %>
+  </div>
+  <div id="faq-image-container">
+    <img class="app-main" src="/images/app-main.png" alt="angell-app-main">
+    <img class="app-nav" src="/images/app-nav.png" alt="angell-app-navigation">
+    <img class="app-search-location" src="/images/app-search-location.png" alt="angell-search-location">
+  </div>
+</section>

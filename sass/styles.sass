@@ -1,0 +1,521 @@
+$primary-color: #1971f6
+$secondary-color: #eaedf4
+$contrast-color: #30373b
+$font-color: rgb(50,50,50)
+
+//Use bootstrap's default Helvetica Neue
+$font: inherit
+
+*
+  box-sizing: border-box
+
+body
+  margin: 0
+  width: 100%
+
+a
+  text-decoration: none
+  color: inherit
+
+#body-wrapper
+  margin: 0
+  width: 100%
+  font-family: $font, sans-serif
+  display: flex
+  flex-direction: column
+  align-items: center
+  overflow-x: hidden
+
+.container-title
+  font-size: 2.5rem
+  text-align: center
+
+
+//=============================Intro Container=============================
+
+#backdrop
+  position: absolute
+  top: 0
+  z-index: -99
+  width: 1920px
+
+#intro-container
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  width: 100%
+  padding: 3% 5%
+  position: relative
+  color: white
+  font-family: $font
+  margin-bottom: 530px
+
+.brand-name
+  display: flex
+  align-items: center
+  font-size: 2rem
+
+.logo
+  width: 70px
+  padding-right: 5px
+
+.heading
+  margin-top: 50px
+  margin-bottom: 15px
+  text-align: center
+
+.sub-heading
+  margin: 0
+  font-weight: 400
+  text-align: center
+
+#test-ride-form
+  display: flex
+  align-items: center
+  justify-content: center
+  font-family: inherit
+  max-width: 100%
+  margin-top: 50px
+  input
+    min-width: 100%
+
+.submit-btn
+  white-space: nowrap
+  border: 0
+  font-family: inherit
+  box-shadow: 0 0 8px rgba(80,80,80,0.7)
+  font-size: 1.1rem
+  border-radius: 4px
+  margin: 0 10px
+  background-color: $contrast-color
+  color: white
+  font-weight: 500
+  transition: color ease-out 0.1s, background-color ease-out 0.1s
+
+.submit-btn:hover
+  color: $primary-color
+  background-color: white
+
+#intro-img
+  position: absolute
+  bottom: -500px
+  z-index: -1
+
+//=========================================================================
+
+//============================Features Container===========================
+
+#features-container
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  width: 1100px
+  font-family: $font
+  .container-title
+    padding: 0 20px
+
+#feature-list
+  display: grid
+  grid-template-columns: 33% 33% 33%
+  grid-auto-rows: 1fr
+  margin-top: 30px
+  justify-items: center
+  align-items: center
+  width: 100%
+
+.feature-item
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  padding: 10%
+  padding-top: 0
+  border-radius: 5px
+  text-align: center
+  height: 100%
+  color: $font-color
+
+.feature-icon
+  font-size: 2.5rem
+  padding: 20px
+  color: $primary-color
+
+#features-image
+  width: 120%
+  z-index: -3
+
+//=========================================================================
+
+//=============================Models Container============================
+
+#models-container
+  margin-top: -7.1vw
+  background-color: $secondary-color
+  width: 100%
+  padding: 120px 0
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  z-index: 1
+  font-family: $font
+
+.models-list
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  width: 100%
+
+.model
+  width: 60%
+  margin: 0
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  background-color: transparent
+
+.model-image-container
+  box-shadow: inset 0 0 100px 60px $secondary-color
+
+.model-image
+  width: 1100px
+  position: relative
+  z-index: -1
+
+.model-details
+  margin-top: -90px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+.model-name
+  font-size: 1.7rem
+  font-weight: 500
+
+.model-price
+  font-size: 1.2rem
+  font-family: Oxygen
+
+//color-picker
+.color-picker
+  display: flex
+  justify-content: center
+  align-items: center
+
+.color-select
+  width: 30px
+  height: 30px
+  border-radius: 50px
+
+.color-select-container
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 36px
+  height: 36px
+  border-radius: 50px
+  box-shadow: 0 0 2px rgba(120,120,120,0.7)
+  margin: 10px
+  transition: transform ease-out 0.3s
+
+.color-select-container:hover
+  transform: scale(1.15)
+
+.explore-btn
+  white-space: nowrap
+  border: 0
+  border-radius: 4px
+  margin: 10px 10px
+  background-color: $primary-color
+  color: white
+  font-weight: 500
+  transition: color ease-out 0.1s, background-color ease-out 0.1s
+
+.explore-btn:hover
+  background-color: white
+  color: $font-color
+  box-shadow: 0 0 3px grey
+
+.explore-btn:focus
+  outline: none
+
+//=========================================================================
+
+//==============================FAQ Container==============================
+
+#faq-container
+  display: flex
+  justify-content: center
+  align-items: flex-start
+  width: 100%
+
+#accordion
+  width: 45%
+  margin: 40px
+  margin-top: 100px
+  padding: 0 50px
+  font-family: $font
+  .container-title
+    margin: 20px 0
+    text-align: left
+
+.faq-title
+  width: 100%
+
+.faq-btn
+  width: inherit
+  background-color: $secondary-color
+  text-align: left
+  border: 1px solid rgba(80,80,80,0.3)
+  border-radius: 5px
+  padding: 10px
+  font-weight: 500
+
+.faq-btn:focus
+  outline: none
+
+.faq-answer
+  padding: 4px 10px
+  padding-bottom: 20px
+  border: 1px solid rgba(80,80,80,0.3)
+  border-radius: 5px
+
+#faq-image-container
+  position: relative
+  width: 35%
+  padding: 70px 0
+  display: flex
+  justify-content: center
+  img
+    width: 400px
+
+.app-nav
+  position: absolute
+  transform: scale(0.95) translateY(10px) translateX(200px) rotate(10deg)
+  z-index: -1
+
+.app-search-location
+  position: absolute
+  transform: scale(0.94) translateY(10px) translateX(-200px) rotate(-10deg)
+  z-index: -1
+
+//=========================================================================
+
+//===========================Contact us Container==========================
+
+#contact-us-container
+  width: 100%
+  background-color: $primary-color
+  display: flex
+  justify-content: center
+  align-items: flex-start
+  color: white
+  padding-top: 100px
+  padding-bottom: 50px
+  font-family: $font
+
+#contact-us-text
+  width: 40%
+  display: flex
+  flex-direction: column
+  align-items: flex-end
+  text-align: right
+  padding: 0 50px
+  font-size: 1.1rem
+
+.contact-item
+  padding: 10px 0
+
+.contact-icon
+  padding-right: 5px
+
+#social-media-container
+  margin-top: 50px
+  h3
+    font-size: 1.5rem
+  a
+    text-decoration: none
+    color: inherit
+
+.social-media-icon
+  padding-left: 10px
+  padding-top: 10px
+  font-size: 1.8rem
+  transition: transform ease-out 0.3s
+
+.social-media-icon:hover
+  transform: scale(1.2)
+
+#contact-us-form
+  width: 35%
+  padding: 40px 50px
+  background-color:  white
+  color: $font-color
+  display: flex
+  flex-direction: column
+  justify-content: center
+  .submit-btn
+    margin: 10px 0
+    box-shadow: 0 0 0px
+  .submit-btn:hover
+    box-shadow: 0 0 3px grey
+
+.form-item
+  padding: 10px
+  font-size: 1.1rem
+  padding: 10px 0
+  label
+    font-weight: 500
+
+.form-feedback
+  display: none
+  font-weight: 500
+
+.success
+  color: #4caf50
+
+.failure
+  color: #ff9800
+
+//=========================================================================
+
+//==================================Footer=================================
+
+footer
+  background-color: $primary-color
+  color: white
+  width: 100%
+  padding: 20px
+  text-align: center
+  font-family: $font
+
+//=========================================================================
+
+//==============================Responsiveness=============================
+
+@media screen and (max-width: 1600px)
+
+  #faq-container
+    flex-direction: column
+    align-items: center
+
+  #accordion
+    width: 70%
+    .container-title
+      text-align: center
+
+  #faq-image-container
+    padding-top: 0
+    width: 95%
+
+@media screen and (max-width: 1100px)
+
+  #features-container
+    width: 100%
+
+  #feature-list
+    grid-template-columns: 50% 50%
+    grid-gap: 0 2.7vw
+
+  #accordion
+    width: 80%
+    padding: 0
+
+  #contact-us-container
+    flex-direction: column
+    align-items: center
+
+  #contact-us-text
+    width: 70%
+    text-align: center
+    align-items: center
+    padding-bottom: 50px
+
+  #contact-us-form
+    width: 70%
+
+@media screen and (max-width: 700px)
+
+  html
+    font-size: 0.9rem
+
+  #intro-container
+    padding-top: 10%
+
+  #intro-img
+    width: 160%
+
+  #test-ride-form
+    flex-direction: column
+    min-width: 80%
+    input
+      margin-bottom: 20px
+    button
+      width: 100%
+
+  #features-image
+    width: 100%
+
+  #accordion
+    width: 95%
+    padding: 0
+
+  #faq-image-container
+    img
+      width: 57%
+
+  .app-nav
+    transform: scale(0.95) translateY(1.4vw) translateX(28.6vw) rotate(10deg)
+
+  .app-search-location
+    transform: scale(0.94) translateY(1.4vw) translateX(-28.6vw) rotate(-10deg)
+
+@media screen and (max-width: 600px)
+
+  #intro-img
+    width: 150%
+    bottom: -400px
+
+  .model
+    width: 100%
+
+  .model-image-container
+    box-shadow: inset 0 0 17vw 10vw $secondary-color
+
+  .model-image
+    width: 180vw
+
+  #contact-us-text
+    width: 100%
+
+  #contact-us-form
+    width: 95%
+    padding: 20px
+
+@media screen and (max-width: 500px)
+
+  #intro-container
+    padding-top: 15%
+    margin-bottom: 450px
+
+  #intro-img
+    width: 170%
+    bottom: -400px
+
+  #test-ride-form
+    min-width: 100%
+
+  #feature-list
+    grid-template-columns: 100%
+
+  .feature-item
+    padding: 2% 10%
+
+  #models-container
+    margin-top: -20px
+
+//=========================================================================

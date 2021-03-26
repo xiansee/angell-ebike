@@ -1,0 +1,13 @@
+<section id="features-container">
+  <h3 class="container-title">Core Features</h3>
+  <div id="feature-list">
+    <% featureList.forEach(feature => { %>
+      <div class="feature-item">
+       <i class="<%= feature.iconClasses %> feature-icon"></i>
+       <h3><%= feature.title %></h3>
+       <p><%= feature.content %></p>
+      </div>
+    <% }) %>
+  </div>
+  <img id="features-image" src="/images/angell-cockpit.png" alt="angell-cockpit">
+</section>

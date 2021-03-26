@@ -1,0 +1,21 @@
+<section id="models-container">
+  <h3 class="container-title">Model Lineup</h3>
+  <div class="models-list">
+    <% modelList.map(modelObj => { %>
+      <% const id = `modelImage${modelObj.id}` %>
+      <% const exploreBtnName = `Explore ${modelObj.name}` %>
+      <div class="model">
+        <div class="model-image-container">
+          <img id=<%=id%> class="model-image" src=<%=modelObj.defaultImgSrc%>>
+        </div>
+        <div class="model-details">
+          <p class="model-name"><%=modelObj.name%></p>
+          <p class="model-price"><%=modelObj.price%></p>
+          <%- include("color-picker", { modelId: modelObj.id, colorOptions: modelObj.colorOptions }) -%>
+          <a href=<%=modelObj.exploreURL%>><button class="explore-btn btn-lg" name="explore" value='<%=modelObj.name%>'><%=exploreBtnName%></button></a>
+        </div>
+      </div>
+    <% }) %>
+  </div>
+
+</section>

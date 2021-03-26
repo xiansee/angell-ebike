@@ -1,0 +1,46 @@
+<section id="contact-us-container">
+  <div id="contact-us-text">
+    <h3 class="container-title">Contact us</h3>
+    <p>Please reach out to us if you would like to learn more about our product.<br/>We look forward to hearing from you.</p>
+    <div class="contact-item">
+      <i class="contact-icon fas fa-envelope"></i>
+      info@angell.com
+    </div>
+    <div class="contact-item">
+      <i class="contact-icon fas fa-phone-square-alt"></i>
+      +1 (123)-456-7890
+    </div>
+    <div class="contact-item">
+      <i class="contact-icon fas fa-map-marker-alt"></i>
+      123, Angell Road, City, Province A1B 2C3
+    </div>
+    <div id="social-media-container">
+      <h3>Follow us</h3>
+      <a href="https://www.instagram.com/angell.bike/?hl=en"><i class="social-media-icon fab fa-instagram"></i></a>
+      <a href="https://twitter.com/angellbike?lang=en"><i class="social-media-icon fab fa-twitter"></i></a>
+      <a href="https://www.facebook.com/angell.bike/"><i class="social-media-icon fab fa-facebook-f"></i></a>
+      <a href="https://www.youtube.com/channel/UCnt_ITAOGRlYb83tdDZpfoQ"><i class="social-media-icon fab fa-youtube"></i></a>
+    </div>
+  </div>
+  <form id="contact-us-form" class="submit-form">
+    <div class="form-item">
+      <label for="input-name">Name</label>
+      <input type="text" class="form-control" id="input-name" placeholder="Introduce yourself." name="name" required>
+    </div>
+    <div class="form-item">
+      <label for="input-email">Email address</label>
+      <input type="email" class="form-control" id="input-email" placeholder="Your email." name="email" required>
+    </div>
+    <div class="form-item">
+      <label for="input-message">Message</label>
+      <textarea type="textarea" class="form-control" id="input-message" placeholder="Ask us anything!" rows="6" name="message" required></textarea>
+    </div>
+    <button class="submit-btn btn-lg" type="submit" name="submission-type" value="contact-us">Send Message</button>
+    <div id="feedback-success" class="form-feedback success">
+      <i class="fas fa-check-circle"></i> Thank you for your message. We will respond within 48 hours.
+    </div>
+    <div id="feedback-failure" class="form-feedback failure">
+      <i class="fas fa-exclamation-circle"></i> Sorry, your message could not be sent. Please email us at info@angell.com.
+    </div>
+  </form>
+</section>
