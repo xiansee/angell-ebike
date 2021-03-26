@@ -21,7 +21,7 @@ const renderData = {
   currentYear: new Date().getFullYear()
 }
 
-app.listen(port, "192.168.0.27", () => {
+app.listen(port, () => {
   console.log("Server started at port "+ port +".");
 });
 
